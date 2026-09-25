@@ -13,8 +13,9 @@
     <button id="darkmodebtn">Toggle Dark Mode</button>
 
     <h3>PROFESSIONAL SUMMARY</h3>
-    <p>Mechanical Engineering graduate (B.S., Indus University) with hands-on experience in machine maintenance, installation, and workshop operations. Currently gaining practical industry exposure at Kausar Trade Distributors. Proficient in CAD, technical drawing, and project management tools including Primavera P6 and ClickUp. Seeking an entry-level mechanical engineering or maintenance role where I can apply technical knowledge and grow professionally.</p>
-
+    <p id="summary-text"><span id="summary-cursor" style="display:inline-block;width:8px;background:#333;animation:blink 0.8s steps(1) infinite;">&nbsp;</span>
+    Mechanical Engineering graduate (B.S., Indus University) with hands-on experience in machine maintenance, installation, and workshop operations. Currently gaining practical industry exposure at Kausar Trade Distributors. Proficient in CAD, technical drawing, and project management tools including Primavera P6 and ClickUp. Seeking an entry-level mechanical engineering or maintenance role where I can apply technical knowledge and grow professionally.</p>
+    <style>@keyframes blink { 50% { opacity: 0; } }</style>
     <h3>WORK EXPERIENCE</h3>
     <h4>Technician</h4>
     <ul>
@@ -97,11 +98,18 @@
     </ul>
       <div>
     <h3>Contact</h3>
-    <p>Phone: 0336-3884729<br>Email: muhammadasadabbas88@gmail.com</p>
-<a href="https://www.patreon.com/c/MuhammadAsadAbbas?vanity=user">
-    <button style="background-color: #ff424d;color: white;padding: 10px 20px;border-radius: 6px;cursor: pointer;">Patreon</button>
-</a>
+
+    <div style="overflow: hidden; height: 40px; position: relative; background-color: #f5f5f5; border-radius: 6px;">
+        <div id="ticker" style="position: absolute; white-space: nowrap; top: 6px; left: 100%; font-size: 14px;">
+            Phone: 0336-3884729<br>Email: muhammadasadabbas88@gmail.com
+        </div>
+    </div>
+
+    <a href="https://www.patreon.com/c/MuhammadAsadAbbas?vanity=user">
+        <button style="background-color: #ff424d; color: white; padding: 10px 20px; border-radius: 6px; cursor: pointer;">Patreon</button>
+    </a>
 </div>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
