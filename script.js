@@ -37,3 +37,21 @@ typeSummary();   // <-- ye line hi function ko chalati hai, ye missing thi
 
   container.addEventListener('mouseenter', () => { isPaused = true; });
   container.addEventListener('mouseleave', () => { isPaused = false; });
+
+// typeSummary() is now triggered from the welcome-screen Enter button below
+
+// Welcome screen logic
+const welcomeScreen = document.getElementById('welcome-screen');
+const mainContent = document.getElementById('main-content');
+const enterBtn = document.getElementById('enter-btn');
+
+enterBtn.addEventListener('click', () => {
+  welcomeScreen.classList.add('hidden');
+  mainContent.style.display = 'block';
+  typeSummary(); // start the typing effect only once the user enters
+
+  // Fully remove welcome screen after fade-out finishes
+  setTimeout(() => {
+    welcomeScreen.style.display = 'none';
+  }, 600);
+});
