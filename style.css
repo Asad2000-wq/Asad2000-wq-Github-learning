@@ -92,7 +92,7 @@ body.dark {
 
 /* Main content starts invisible until welcome is dismissed */
 #main-content {
-    display: none;
+    display: none;}
 
 
 body.dark h1 {
